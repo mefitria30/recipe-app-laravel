@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <nav class="absolute top-0 flex w-full max-w-[640px] items-center justify-between px-5 mt-[30px] z-20">
+            <a href="index.html">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-white/20">
+                    <img src="assets/images/icons/arrow-left.svg" class="w-5 h-5 object-contain" alt="icon">
+                </div>
+            </a>
+            <h1 class="font-semibold text-white">Category</h1>
+            <button class="appearance-none">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-white/20">
+                    <img src="assets/images/icons/more.svg" class="w-5 h-5 object-contain" alt="icon">
+                </div>
+            </button>
+        </nav>
+        <header class="relative w-full h-fit flex flex-col shrink-0 rounded-b-[40px]">
+            <div class="relative flex shrink-0 w-full h-[260px] rounded-b-[40px] bg-black overflow-hidden -mb-[45px]">
+                <div class="gradient-filter absolute w-full h-full bg-[linear-gradient(180.17deg,rgba(0,0,0,0)42.98%,rgba(0,0,0,0.76)79.32%)] z-10 rotate-180"></div>
+                <img src="assets/images/thumbnails/category-background.png" class="w-full h-full object-cover" alt="thumbnail">
+            </div>
+            <div class="relative px-5 z-10">
+                <div class="flex items-center justify-between w-full rounded-[20px] p-[10px_20px] gap-4 bg-white shadow-[0_12px_30px_0_#D6D6D640]">
+                    <div class="flex items-center gap-[10px]">
+                        <div class="w-[70px] h-[70px] overflow-hidden">
+                            <img src="assets/images/icons/bakery.png" class="w-full h-full object-cover" alt="icon">
+                        </div>
+                        <div class="flex flex-col gap-[2px]">
+                            <p class="font-bold text-lg leading-[27px]">Bakery</p>
+                            <p class="text-sm leading-[21px] text-[#848486]">183,498 Recipes</p>
+                        </div>
+                    </div>
+                    <button class="flex items-center justify-center w-10 h-10 rounded-full bg-white overflow-hidden shadow-[0_10px_20px_0_#D6D6D6AB]">
+                        <img src="assets/images/icons/heart-black.svg" alt="icon">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section id="MadeByPeople" class="mt-[30px]">
+            <div class="flex items-center justify-between px-5">
+                <h2 class="font-bold">Made by People</h2>
+            </div>
+            <div class="swiper w-full mt-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide !w-fit">
+                        <a href="details.html" class="card">
+                            <div class="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
+                                <img src="assets/images/thumbnails/thumbnail-1.png" class="absolute w-full h-full object-cover" alt="thumbnails">
+                                <div class="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10"></div>
+                                <div class="relative flex flex-col h-full justify-between p-5 z-20">
+                                    <div class="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-white/20 backdrop-blur">
+                                        <img src="assets/images/icons/Star 1.svg" class="w-4 h-4" alt="star">
+                                        <span class="font-semibold text-xs leading-[18px] text-white">4.5</span>
+                                    </div>
+                                    <div class="flex flex-col gap-[6px]">
+                                        <h3 class="font-bold text-xl leading-[28px] text-white">Orange Cake Masterpieces</h3>
+                                        <p class="font-semibold text-xs leading-[18px] text-[#FF4C1C]">Sweet</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit">
+                        <a href="details.html" class="card">
+                            <div class="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
+                                <img src="assets/images/thumbnails/thumbnail-2.png" class="absolute w-full h-full object-cover" alt="thumbnails">
+                                <div class="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10"></div>
+                                <div class="relative flex flex-col h-full justify-between p-5 z-20">
+                                    <div class="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-white/20 backdrop-blur">
+                                        <img src="assets/images/icons/Star 1.svg" class="w-4 h-4" alt="star">
+                                        <span class="font-semibold text-xs leading-[18px] text-white">4.8</span>
+                                    </div>
+                                    <div class="flex flex-col gap-[6px]">
+                                        <h3 class="font-bold text-xl leading-[28px] text-white">Burger Tebal Makin Hot</h3>
+                                        <p class="font-semibold text-xs leading-[18px] text-[#FF4C1C]">Bakery</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit">
+                        <a href="details.html" class="card">
+                            <div class="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
+                                <img src="assets/images/thumbnails/thumbnail-3.png" class="absolute w-full h-full object-cover" alt="thumbnails">
+                                <div class="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10"></div>
+                                <div class="relative flex flex-col h-full justify-between p-5 z-20">
+                                    <div class="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-white/20 backdrop-blur">
+                                        <img src="assets/images/icons/Star 1.svg" class="w-4 h-4" alt="star">
+                                        <span class="font-semibold text-xs leading-[18px] text-white">4.3</span>
+                                    </div>
+                                    <div class="flex flex-col gap-[6px]">
+                                        <h3 class="font-bold text-xl leading-[28px] text-white">French Toast Blueberries</h3>
+                                        <p class="font-semibold text-xs leading-[18px] text-[#FF4C1C]">by Masa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="LatestRecipes" class="px-5 mt-[30px]">
+            <div class="flex items-center justify-between">
+                <h2 class="font-bold">Latest Recipes</h2>
+            </div>
+            <div class="flex flex-col gap-[18px] mt-[18px]">
+                <a href="details.html" class="card">
+                    <div class="flex rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D640] transition-all duration-300 hover:shadow-[0_10px_20px_0_#FF4C1C80]">
+                        <div class="flex shrink-0 w-[100px] h-20 rounded-[20px] overflow-hidden bg-[#D9D9D9]">
+                            <img src="assets/images/thumbnails/thumbnail-3.png" class="w-full h-full object-cover" alt="thumbnail">
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-bold text-lg leading-[24px]">Burger Tebal Makin Hot</h3>
+                                <div class="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-[#FF4C1C] shadow-[0_6px_10px_0_#FF4C1C80]">
+                                    <img src="assets/images/icons/Star 1.svg" class="w-4 h-4" alt="star">
+                                    <span class="font-semibold text-xs leading-[18px] text-white">4.8</span>
+                                </div>
+                            </div>
+                            <p class="text-sm leading-[21px] text-[#848486]">by Shayna Alqowy</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="details.html" class="card">
+                    <div class="flex rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D640] transition-all duration-300 hover:shadow-[0_10px_20px_0_#FF4C1C80]">
+                        <div class="flex shrink-0 w-[100px] h-20 rounded-[20px] overflow-hidden bg-[#D9D9D9]">
+                            <img src="assets/images/thumbnails/thumbnail-2.png" class="w-full h-full object-cover" alt="thumbnail">
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-bold text-lg leading-[24px]">Burger Tebal Makin Hot</h3>
+                                <div class="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-[#FF4C1C] shadow-[0_6px_10px_0_#FF4C1C80]">
+                                    <img src="assets/images/icons/Star 1.svg" class="w-4 h-4" alt="star">
+                                    <span class="font-semibold text-xs leading-[18px] text-white">4.8</span>
+                                </div>
+                            </div>
+                            <p class="text-sm leading-[21px] text-[#848486]">by Shayna Alqowy</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="details.html" class="card">
+                    <div class="flex rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D640] transition-all duration-300 hover:shadow-[0_10px_20px_0_#FF4C1C80]">
+                        <div class="flex shrink-0 w-[100px] h-20 rounded-[20px] overflow-hidden bg-[#D9D9D9]">
+                            <img src="assets/images/thumbnails/thumbnail-1.png" class="w-full h-full object-cover" alt="thumbnail">
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-bold text-lg leading-[24px]">Burger Tebal Makin Hot</h3>
+                                <div class="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-[#FF4C1C] shadow-[0_6px_10px_0_#FF4C1C80]">
+                                    <img src="assets/images/icons/Star 1.svg" class="w-4 h-4" alt="star">
+                                    <span class="font-semibold text-xs leading-[18px] text-white">4.8</span>
+                                </div>
+                            </div>
+                            <p class="text-sm leading-[21px] text-[#848486]">by Shayna Alqowy</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="details.html" class="card">
+                    <div class="flex rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D640] transition-all duration-300 hover:shadow-[0_10px_20px_0_#FF4C1C80]">
+                        <div class="flex shrink-0 w-[100px] h-20 rounded-[20px] overflow-hidden bg-[#D9D9D9]">
+                            <img src="assets/images/thumbnails/thumbnail-2.png" class="w-full h-full object-cover" alt="thumbnail">
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-bold text-lg leading-[24px]">Burger Tebal Makin Hot</h3>
+                                <div class="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-[#FF4C1C] shadow-[0_6px_10px_0_#FF4C1C80]">
+                                    <img src="assets/images/icons/Star 1.svg" class="w-4 h-4" alt="star">
+                                    <span class="font-semibold text-xs leading-[18px] text-white">4.8</span>
+                                </div>
+                            </div>
+                            <p class="text-sm leading-[21px] text-[#848486]">by Shayna Alqowy</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>
