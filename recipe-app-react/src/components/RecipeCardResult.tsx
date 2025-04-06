@@ -6,7 +6,7 @@ export default function RecipeCardResult({ recipe }: RecipeCardResultProps) {
     
     return (
         <div>
-            <a href="details.html" className="card">
+            <div className="card">
                 <div className="flex rounded-[20px] p-[14px] gap-[14px] bg-white shadow-[0_12px_30px_0_#D6D6D640] transition-all duration-300 hover:shadow-[0_10px_20px_0_#FF4C1C80]">
                 <div className="flex shrink-0 w-[100px] h-20 rounded-[20px] overflow-hidden bg-[#D9D9D9]">
                     <img
@@ -22,7 +22,7 @@ export default function RecipeCardResult({ recipe }: RecipeCardResultProps) {
                     </h3>
                     <div className="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-[#FF4C1C] shadow-[0_6px_10px_0_#FF4C1C80]">
                         <img
-                        src="assets/images/icons/Star 1.svg"
+                        src="/assets/images/icons/Star 1.svg"
                         className="w-4 h-4"
                         alt="star"
                         />
@@ -36,7 +36,7 @@ export default function RecipeCardResult({ recipe }: RecipeCardResultProps) {
                     </p>
                 </div>
                 </div>
-            </a>
+            </div>
         </div>
     );
 };

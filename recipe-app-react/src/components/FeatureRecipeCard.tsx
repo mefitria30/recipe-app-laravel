@@ -6,7 +6,7 @@ export default function FeatureRecipeCard({ recipe }: FeaturedRecipeCardProps) {
 
     return (
         <div>
-            <a href="details.html" className="card">
+            <div className="card">
                 <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
                 <img
                     src={`${baseURL}/${recipe.thumbnail}`}
@@ -35,7 +35,7 @@ export default function FeatureRecipeCard({ recipe }: FeaturedRecipeCardProps) {
                     </div>
                 </div>
                 </div>
-            </a>
+            </div>
         </div>
     )
 }

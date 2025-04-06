@@ -1,20 +1,21 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import FeatureRecipeCard from "../components/FeatureRecipeCard";
 import { useEffect, useState } from "react";
-import { Recipe } from "../types/type";
+import { Category } from "../types/type";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-export default function BrowseFeatureRecipesWrapper() {
+export default function CategoryFeatureRecipesWrapper() {
 
-    const [recipes, setRecipes] = useState<Recipe[]>([]);
+    const { slug } = useParams<{ slug: string }>();
+    const [category, setCategory] = useState<Category | null>(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<String | null>(null);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/api/recipes`)
+        axios.get(`http://127.0.0.1:8000/api/category/${slug}`)
             .then(response => {
-                setRecipes(response.data.data);
+                setCategory(response.data.data);
                 setLoading(false);
             })
             .catch(error => {
@@ -51,13 +52,17 @@ export default function BrowseFeatureRecipesWrapper() {
                 slidesOffsetBefore={20}
                 slidesOffsetAfter={20}
                 >
-                    {recipes.map((recipe) => (
-                        <SwiperSlide key={recipe.id} className=" !w-fit">
-                            <Link to={`/recipe/${recipe.slug}`}>
-                                <FeatureRecipeCard recipe={recipe} />      
-                            </Link>    
+                    {category && category.recipes.length > 0 ? (
+                        category.recipes.map((recipe) => (
+                            <SwiperSlide key={recipe.id} className="!w-fit">
+                                <Link to={ `/recipe/${recipe.slug}` }>
+                                    <FeatureRecipeCard recipe={recipe} />
+                                </Link>
                         </SwiperSlide>
-                    ))}
+                        ))
+                    ) : (
+                        <p>Belum ada data recipe dari kategori berikut</p>
+                    )}
             </Swiper>
             </div>
         </section>
