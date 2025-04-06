@@ -15,7 +15,7 @@ class SearchController extends Controller
         $query      = $request->input('query');
         
         // $recipes    = Recipe::where('name', 'LIKE', "%{query}%")->get();
-        $recipes = Recipe::whereRaw('LOWER(name) LIKE LOWER(?)', ["%{$query}%"])->get();
+        $recipes = Recipe::with('author')->whereRaw('LOWER(name) LIKE LOWER(?)', ["%{$query}%"])->get();
         
         return RecipeResource::collection($recipes);
     }
