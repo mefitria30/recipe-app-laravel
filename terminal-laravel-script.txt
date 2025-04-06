@@ -437,3 +437,11 @@ PS C:\xampp\htdocs\recipe-app-laravel> php artisan make:controller Api/RecipeCon
    INFO  Controller [C:\xampp\htdocs\recipe-app-laravel\app\Http\Controllers\Api\RecipeController.php] created successfully.  
 
 PS C:\xampp\htdocs\recipe-app-laravel> 
+
+PS C:\xampp\htdocs\recipe-app-laravel> php artisan vendor:publish --tag="cors"
+
+   INFO  No publishable resources for tag [cors].  
+
+PS C:\xampp\htdocs\recipe-app-laravel> 
+
+
